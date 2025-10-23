@@ -1,22 +1,10 @@
-import { useState } from 'react'
-import './App.css'
+import Navbar from "./components/layouts/Navbar";
 
-function App() {
-  const [count, setCount] = useState(0)
-  const [color, setColor] = useState("bg-indigo-600 hover:bg-indigo-700");
-  const [rounded, setRounded] = useState("rounded-xl");
-  const [textSize, setTextSize] = useState("text-3xl");
-
+export default function AppLayout() {
   return (
-    <>
-      {/*card container*/}
-      <div className="min-h-full flex flex--col items-center justify-center p-6">
-        <div>
-          <h1 className={`${textSize} font-semibold`}>Hello React + Tailwind</h1>
-        </div>
-      </div>
-    </>
-  )
+    <div className="min-h-dvh flex flex-col">
+        <Navbar />
+        {/* main content goes here */}
+    </div>
+  );
 }
-
-export default App
