@@ -53,7 +53,7 @@ export default function Home() {
             </Container>
         </Section>
             <TechStack />
-            <Projects />
+            <Projects limit={6} />
     </div>
     );
 }
