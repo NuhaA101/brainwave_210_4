@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 export default function SEO({ title, description, image = "/vite.svg", url = window.location.href, type = "website" }) {
-  const siteName = "Christopher Hayes - Portfolio";
+  const siteName = "Nuha Ahmad - Portfolio";
   const fullTitle = title ? `${title} | ${siteName}` : siteName;
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function SEO({ title, description, image = "/vite.svg", url = win
     // Basic Meta Tags
     updateMetaTag("description", description);
     updateMetaTag("robots", "index, follow");
-    updateMetaTag("author", "Christopher Hayes");
+    updateMetaTag("author", "Nuha Ahmad");
 
     // Open Graph / Facebook
     updateMetaTag("og:type", type, true);

@@ -34,14 +34,14 @@ export default function Project() {
         title={project.title}
         description={
           project.blurb ||
-          `${project.title} - A project by Christopher Hayes showcasing UX design and development skills.`
+          `${project.title} - A project by Nuha Ahmad showcasing UX design and development skills.`
         }
         url={`/portfolio/${project.id}`}
         image={project.image}
       />
       <Container>
         <Breadcrumb
-          items={[{ label: "Home", href: "/" }, { label: "Work", href: "/work" }, { label: project.title }]}
+          items={[{ label: "Home", href: "/" }, { label: "Portfolio", href: "/portfolio" }, { label: project.title }]}
         />
 
         <nav className="body-small subheading-muted">
@@ -67,14 +67,15 @@ export default function Project() {
           <div>
             <h2 className="subheading-primary">Overview</h2>
             <p className="mt-2 body-default">
-              Replace this with a short case study: problem, your role, tools, constraints, outcome.
+            {project.overview || "No overview for this project"}
             </p>
 
             <h3 className="mt-6 font-semibold">Highlights</h3>
             <ul className="mt-2 list-disc pl-5 body-default space-y-1">
-              <li>Goal / KPI impact</li>
-              <li>Key UX or dev contribution</li>
-              <li>Notable constraint or insight</li>
+              {project.highlights?.map((highlight, index) => (
+                <li key={index}>{highlight}</li>
+              )) || <li>No highlights available</li>
+              }             
             </ul>
           </div>
         </div>
