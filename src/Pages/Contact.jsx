@@ -186,7 +186,7 @@ export default function Contact() {
               className={`w-full px-4 py-3 bg-white/5 border rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-transparent transition ${
                 errors.email ? "border-red-400" : "border-white/20"
               }`}
-              placeholder="your.email@example.com"
+              placeholder="your.email@examples.com"
             />
             {errors.email && (
               <div

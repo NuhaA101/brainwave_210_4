@@ -13,7 +13,7 @@ export default function Resume() {
     <Section>
       <Container>
         <h1 className="heading-page">My Resume</h1>
-        <p className="mt-2 body-default">Placeholder content.</p>
+        <p className="mt-2 body-default">Click to download</p>
         <iframe
           src="Nuha_Resume.pdf"
           width="100%"

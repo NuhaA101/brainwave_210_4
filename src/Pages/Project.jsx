@@ -16,7 +16,7 @@ export default function Project() {
     return (
       <Section>
         <Container>
-          <h1 className="heading-section">Project not found</h1>
+          <h1 className="heading-section">Project not found.</h1>
           <p className="mt-2 body-default">We couldn't find a project at /portfolio/{slug}</p>
           <div className="mt-6">
             <Button onClick={() => navigate(-1)} variant="secondary" size="sm">

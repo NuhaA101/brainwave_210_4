@@ -5,6 +5,7 @@ import TechStack from "../sections/TechStack.jsx";
 import Projects from "../sections/Projects.jsx";
 import Testimonials from "../sections/Testimonials.jsx";
 import FinalCTA from "../sections/FinalCTA.jsx";
+import SEO from "../components/ui/SEO.jsx";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
             {/* Text content - 2/3rds */}
             <div className="lg:col-span-2 text-center lg:text-left">
               <h1 id="intro-heading" className="heading-hero">
-                Hi, my name is Nuha Ahmad. I create things for the web
+                Hi, my name is Nuha Ahmad. I create things for the web.
               </h1>
               <h2 className="mt-4 max-w-prose lg:mx-0 mx-auto body-large">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla

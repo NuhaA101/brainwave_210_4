@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Section>
       <Container>
-        {fragments.content}
+        {fragments.content} 
       </Container>
     </Section>
   );
