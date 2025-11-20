@@ -10,7 +10,7 @@ import Project from "./pages/Project.jsx";
 import About from "./pages/About.jsx";
 import Resume from "./pages/Resume.jsx";
 import Contact from "./pages/Contact.jsx";
-import Fragments from "./pages/Fragments.jsx"
+import Fragments from "./pages/Fragments.jsx";
 
 import "./index.css";
 
